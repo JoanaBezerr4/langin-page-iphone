@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langin page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="">
+        <nav>
+            <a href="#">Mac</a>
+            <a href="#">iPad</a>
+            <a href="#" id="iphone">iPhone</a>
+            <a href="#">Watch</a>
+            <a href="#">AirPods</a>
+            <a href="#">Só na Apple</a>
+            <a href="#">Suporte</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="bola-verde">
+        </div>
+        <div class="imagens" id="imagens"></div>
+        <div class="texto">
+            <img src="img/iphone13.png" alt="">
+            <h1>Seu novo superpoder</h1>
+            <p>Chip com velocidade impressionante. Um aumento notável na duração da bateria. <br>E novos recursos de foto e vídeo. <br>No iPhone 13, voce faz coisas que nunca pôde. E ele ainda vem com dois tamanhos</p>
+
+            <p class="preco">A partir de R$6.599,00</p>
+
+            <button type="button">Comprar</button>
+
+            <p class="escolher">Escolha sua cor favorita</p>
+            <div class="cores">
+                
+                <span class="verde-musgo" onclick="mudarCor('img/green.png'); circuloMuda('#445c42')">
+                    
+                </span>
+                <span class="rosa-rose" onclick="mudarCor('img/pink.png'); circuloMuda('#ffc9cf')" >
+                    
+                </span>
+                <span class="azul-escuro" onclick="mudarCor('img/blue.png'); circuloMuda('#0b839e')">
+                   
+                </span>
+                <span class="preto" onclick="mudarCor('img/black.png'); circuloMuda('#092732')">
+                    
+                </span>
+                <span class="branco" onclick="mudarCor('img/white.png'); circuloMuda('#e0dbd7')">
+                    
+                </span>
+                <span class="vermelho" onclick= "mudarCor('img/red.png'); circuloMuda('#cf4f68')">
+                    
+                </span>
+            </div>
+            
+        </div>
+
+
+       
+            <div class="big-phone">
+                <img src="img/green.png" alt="Imagem Iphone" id="celular">
+            
+            
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        function mudarCor(e){
+            document.querySelector('#celular').src= e;
+        }
+
+        function circuloMuda(color){
+            const circulo = document.querySelector('.bola-verde');
+            circulo.style.background = color;
+        }
+    </script>
+</body>
+</html>
